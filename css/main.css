@@ -1,0 +1,77 @@
+@charset "gb2312";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-12-06 15:39:48
+ * @version $Id$
+ */
+
+.th-inblo{
+	display: inline-block;
+	*zoom:1;
+	*display: inline;
+	vertical-align: top;
+}
+.th-nospace{
+	font-size: 0px;
+	line-height: 0px;
+}
+.header>img{
+	width: 100%;
+}
+
+
+.body-wrap{
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-box{
+	margin: 2px;
+}
+.img-box img{
+	width: 100%;
+	height: auto;
+}
+.img-box>p{text-align: center;font-family: "Microsoft Yahei";font-size: 18px;line-height: 28px;}
+
+.fixed-wrap{
+	position: fixed;
+	width: 100vw;
+	height: 110vh;
+	background-color: #000;
+	/*display: none;*/
+	top: 0px;
+	left: 0px;
+	z-index: 9999999;
+	line-height: 0px;
+	font-size: 0px;
+	//终于知道为什么先吧这个设置为display:none;之后，后面的移动事件无效了，因为none的宽度为0，而后面要用到那个宽度
+	/*display: none;*/
+	/*opacity: 0;*/
+}
+.alert-imgbox:after{
+	content: " ";
+	display: inline-block;
+	line-height: 100vh;
+	height: 100vh;
+	vertical-align: middle;
+	color: #FFF;
+	font-size: 10px;
+}
+
+
+.fixed-wrap img{width: 100vw;height: auto;vertical-align: middle;}
+
+.alert-imgbox{
+	width: 99999900vw;
+	font-size: 0px;
+	line-height: 0px;
+	/*line-height: 0px;*/
+	position: relative;
+	/*left: -100vw;*/
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
